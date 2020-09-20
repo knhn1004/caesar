@@ -12,7 +12,7 @@
 - -e: encrypt string
 - -d: decrypt code
 - -b: brute force code
-- -k: brute force code
+- -k: key to shift
 - -b: brute force code
 
 #### Examples
