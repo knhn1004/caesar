@@ -78,7 +78,7 @@ string decrypt(string text, int key) {
 }
 
 void bruteforce(string text) {
-  cout << "n   |   OUTPUT" << endl;
+  cout << "key |   OUTPUT" << endl;
   for (int i = 1; i < 26; i++) {
     string seperator = (i < 10) ? "   |   " : "  |   ";
     cout << "----|";
@@ -161,6 +161,7 @@ void print_help() {
   cout << "  caesar -e oliver -k 15" << endl;
   cout << "  caesar -d daxktg -k 15" << endl;
   cout << "  caesar -b daxktg" << endl;
+  cout << "  caesar -b \"P svcl Jyfwavnyhwof!\"" << endl;
 }
 
 int main(int argc, char *argv[]) {
