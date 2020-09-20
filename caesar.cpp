@@ -161,7 +161,7 @@ void print_help() {
   cout << "  caesar -e oliver -k 15" << endl;
   cout << "  caesar -d daxktg -k 15" << endl;
   cout << "  caesar -b daxktg" << endl;
-  cout << "  caesar -b \"P svcl Jyfwavnyhwof!\"" << endl;
+  cout << "  caesar -b \"svcl Jyfwavnyhwof\"" << endl;
 }
 
 int main(int argc, char *argv[]) {
