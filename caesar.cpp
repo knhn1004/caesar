@@ -161,7 +161,8 @@ void print_help() {
   cout << "  caesar -e oliver -k 15" << endl;
   cout << "  caesar -d daxktg -k 15" << endl;
   cout << "  caesar -b daxktg" << endl;
-  cout << "  caesar -b \"svcl Jyfwavnyhwof\"" << endl;
+  cout << "  caesar -b \"svcl Jyfwavnyhwof\\!\"" << endl;
+  cout << " (notice the usage of escape characters)" << endl;
 }
 
 int main(int argc, char *argv[]) {
