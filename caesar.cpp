@@ -42,8 +42,7 @@ string encrypt(string text, int key) {
       }
       result += ch;
     } else if (islower(text[i])) {
-      if (ch >= 'a' && ch <= 'z') {
-      } else if (ch > 'z') {
+      if (ch > 'z') {
         ch -= 26;
       }
       result += ch;
@@ -90,7 +89,6 @@ void bruteforce(string text) {
 }
 
 void interactive_mode() {
-
   char option;
 
   while (option != 'e' || option != 'd' || option != 'b') {
@@ -186,7 +184,9 @@ int main(int argc, char *argv[]) {
         return 0;
       }
       try {
-        string result = encrypt(argv[2], int(*argv[4]));
+        // fix argv getting wrong integer off of string
+        string result = encrypt(argv[2], int(*argv[4]) - 48); // -48 to fix
+
         cout << result << endl;
       } catch (int e) {
         cerr << "invalid syntax" << endl;
@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
         return 0;
       }
       try {
-        string result = decrypt(argv[2], int(*argv[4]));
+        string result = decrypt(argv[2], int(*argv[4]) - 48);
         cout << result << endl;
       } catch (int e) {
         cerr << "invalid syntax" << endl;
