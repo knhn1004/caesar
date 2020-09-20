@@ -11,6 +11,7 @@ void print_welcome_message() {
   cout << "██      ██   ██ ██           ██ ██   ██ ██   ██ \n";
   cout << " ██████ ██   ██ ███████ ███████ ██   ██ ██   ██ ";
   cout << "by 01!v3r\n" << endl;
+  cout << "Welcome to caesar!" << endl;
 }
 
 int getkey() {
@@ -91,8 +92,6 @@ void bruteforce(string text) {
 void interactive_mode() {
 
   char option;
-  print_welcome_message();
-  cout << "Welcome to caesar!" << endl;
 
   while (option != 'e' || option != 'd' || option != 'b') {
     int key = 0;
