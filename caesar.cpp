@@ -185,7 +185,7 @@ int main(int argc, char *argv[]) {
       }
       try {
         // fix argv getting wrong integer off of string
-        string result = encrypt(argv[2], int(*argv[4]) - 48); // -48 to fix
+        string result = encrypt(argv[2], stoi(argv[4]));
 
         cout << result << endl;
       } catch (int e) {
@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
         return 0;
       }
       try {
-        string result = decrypt(argv[2], int(*argv[4]) - 48);
+        string result = decrypt(argv[2], stoi(argv[4]));
         cout << result << endl;
       } catch (int e) {
         cerr << "invalid syntax" << endl;
