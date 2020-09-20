@@ -18,17 +18,17 @@
 #### Examples
 
 ```bash
-caesar -e oliver -k 15
+./caesar -e oliver -k 15
 ```
 
 ```bash
-- caesar -d daxktg -k 15
+./caesar -d daxktg -k 15
 ```
 
 ```bash
-- caesar -b daxhtg
+./caesar -b daxhtg
 ```
 
 ```bash
-- caesar -i
+./caesar -i
 ```
