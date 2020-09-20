@@ -2,11 +2,11 @@
 
 ## This is an C++ simple caesar cipher application
 
-## Caesar 1.0.0 [https://github.com/knhn1004/caesar]
+### Caesar 1.0.0 [https://github.com/knhn1004/caesar]
 
-### Usage: caesar [Options] {target string} (-k {key})
+#### Usage: caesar [Options] {target string} (-k {key})
 
-### Options
+#### Options
 
 - -h: help message
 - -e: encrypt string
@@ -15,7 +15,7 @@
 - -k: brute force code
 - -b: brute force code
 
-### Examples
+#### Examples
 
 ```bash
 caesar -e oliver -k 15
